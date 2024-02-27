@@ -1,0 +1,138 @@
+*
+{
+    margin: auto;
+}
+
+.login h2
+{
+    font-size: 2em;
+    color: #1e6b8a;
+}
+
+.login .inputBx
+{
+    position: relative;
+    width: 100%;
+}
+
+.login .inputBx input
+{
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 2px solid #be3535;
+    border-radius: 48px;
+    font-size: 1.2em;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+.login .inputBx input[type="submit"]
+{
+    width: 115%;
+    background-color: #0078ff;
+    background-color: linear-gradient(45deg, #ff357a, #fff172);
+    border: none;
+    cursor: pointer;
+}
+
+.login .inputBx input::placeholder
+{
+    color: rgba(41, 154, 158, 0.75);
+}
+
+.login .links
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.login .links a
+{
+    color: #2d25a7;
+    text-decoration: none;
+}
+
+.ring
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring i
+{
+    position: absolute;
+    inset: 0px;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+}
+
+.ring i:nth-child(1)
+{
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2)
+{
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3)
+{
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+}
+
+.ring:hover i
+{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0px 0px 20px var(--clr));
+}
+
+.login
+{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
